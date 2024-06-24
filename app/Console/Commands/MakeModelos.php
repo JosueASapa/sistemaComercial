@@ -4,7 +4,7 @@ namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
 
-class Modelos extends Command
+class MakeModelos extends Command
 {
     /**
      * The name and signature of the console command.
@@ -23,7 +23,6 @@ class Modelos extends Command
     {
         $models = [
             'Usuario',
-            'User',
             'Empleado',
             'Consumo',
             'Departamento',
@@ -93,10 +92,14 @@ class Modelos extends Command
             'AnomaliaCatalogo',
             'Anomalia',
             'Auditoria'
+            
         ];
-
+        $extra='-mf';
         foreach ($models as $model) {
-            $this->call('make:model', ['name' => $model, '-mf' => true]);
+            $this->call('make:model', ['name' => $model,
+            '--migration' => true,
+            '--factory' => true]);
+            $this->info("Model $model created successfully.");
         }
 
         $this->info('All models have been created successfully.');
