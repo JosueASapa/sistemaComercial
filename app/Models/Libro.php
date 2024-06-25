@@ -5,13 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class User extends Model
+class Libro extends Model
 {
     use HasFactory;
-    protected $fillable=[
-        'name',
-        'email',
-        'email_verified_at',
-        'password',
+    protected $fillable = [
+        'id_ruta',
+        'nombre',
+        'latitud',
+        'longitud',
     ];
 }
