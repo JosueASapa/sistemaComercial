@@ -22,13 +22,6 @@ class MakeModelos extends Command
     public function handle()
     {
         $models = [
-            'Usuario',
-            'Empleado',
-            'Consumo',
-            'Departamento',
-            'Ruta',
-            'Libro',
-            'GiroComercialCatalogo',
             'Toma',
             'Medidor',
             'Contrato',
@@ -56,6 +49,7 @@ class MakeModelos extends Command
             'DatosFiscales',
             'CFDI',
             'ConceptoCatalogo',
+            /*
             'ConceptoAplicable',
             'ConvenioCatalogo',
             'Cargo',
@@ -92,6 +86,7 @@ class MakeModelos extends Command
             'AnomaliaCatalogo',
             'Anomalia',
             'Auditoria'
+            */
             
         ];
         $extra='-mf';
