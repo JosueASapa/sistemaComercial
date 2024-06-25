@@ -24,7 +24,7 @@ class UsuarioFactory extends Factory
             'apellido_paterno' => $this->faker->lastName,
             'apellido_materno' => $this->faker->lastName,
             'nombre_contacto' => $this->faker->name,
-            'telefono' => $this->faker->phoneNumber,
+            'telefono' => substr($this->faker->phoneNumber(), 2, 10),
             'curp' => Str::upper(Str::random(18)),
             'rfc' => Str::upper(Str::random(13)),
             'correo' => $this->faker->unique()->safeEmail,

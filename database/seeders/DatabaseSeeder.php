@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
-
+use Database\Factories\GiroComercialCatalogoFactory;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -20,6 +20,8 @@ class DatabaseSeeder extends Seeder
             EmpleadoSeeder::class,
             RutaSeeder::class,
             LibroSeeder::class,
+            GiroComercialCatalogoSeeder::class,
+            TomaSeeder::class,
         ]);
     }
 }

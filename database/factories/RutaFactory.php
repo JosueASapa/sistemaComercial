@@ -18,8 +18,10 @@ class RutaFactory extends Factory
      */
     public function definition(): array
     {
+        $numrutas=Ruta::count()+1;
         return [
-        'nombre'=>'ruta'.Ruta::count()+1,
+        'nombre'=>'ruta'.$numrutas,
+        'estatus'=>'activo',
         ];
     }
 }
