@@ -93,7 +93,8 @@ class MakeModelos extends Command
         foreach ($models as $model) {
             $this->call('make:model', ['name' => $model,
             '--migration' => true,
-            '--factory' => true]);
+            '--factory' => true,
+            '--seeder' => true]);
             $this->info("Model $model created successfully.");
         }
 
