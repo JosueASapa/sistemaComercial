@@ -11,9 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('giro_comercial_catalogos', function (Blueprint $table) {
+        Schema::create('tomas', function (Blueprint $table) {
             $table->id();
-            $table->string('nombre_giro');
             $table->timestamps();
         });
     }
@@ -23,6 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('giro_comercial_catalogos');
+        Schema::dropIfExists('tomas');
     }
 };

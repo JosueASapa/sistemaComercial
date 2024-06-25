@@ -5,9 +5,9 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\GiroComercialCatalogo>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Toma>
  */
-class GiroComercialCatalogoFactory extends Factory
+class TomaFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -16,9 +16,8 @@ class GiroComercialCatalogoFactory extends Factory
      */
     public function definition(): array
     {
-        //$giros[]=["comercial","domestico","industrial","especial","publico"];
         return [
+            //
         ];
-      
     }
 }

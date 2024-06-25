@@ -47,13 +47,13 @@ class MakeModelos extends Command
             'CensoInputs',
             'CensoRespuesta',
             'DatosFiscales',
-            'CFDI',
+            'cfdi',
             'ConceptoCatalogo',
-            /*
             'ConceptoAplicable',
             'ConvenioCatalogo',
             'Cargo',
             'Pago',
+             /*
             'Abono',
             'BonificacionCatalogo',
             'Bonificacion',

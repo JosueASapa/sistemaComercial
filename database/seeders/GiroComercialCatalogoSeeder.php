@@ -12,6 +12,12 @@ class GiroComercialCatalogoSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        $categorias = [
+            ['nombre' => 'domestico'],
+            ['nombre' => 'comercial'],
+            ['nombre' => 'industrial'],
+            ['nombre' => 'publico'],
+            ['nombre' => 'especial']
+          ];
     }
 }
