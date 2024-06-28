@@ -13,5 +13,6 @@ class User extends Model
         'email',
         'email_verified_at',
         'password',
+        'estado',
     ];
 }

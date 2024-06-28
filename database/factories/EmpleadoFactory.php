@@ -14,6 +14,7 @@ use Illuminate\Support\Str;
 class EmpleadoFactory extends Factory
 {
     protected $model = Empleado::class;
+    protected static $numUser = 1;
     /**
      * Define the model's default state.
      *
@@ -21,8 +22,9 @@ class EmpleadoFactory extends Factory
      */
     public function definition(): array
     {
+        $numUser = self::$numUser++;
         return [
-            'id_user' => User::count()-1, //usar User::count();
+            'id_user' => $numUser, //usar User::count();
             'codigo_empleado' => Str::upper(Str::random(12)),
             'nombre' => substr($this->faker->firstName, 0, 12),
             'apellido_paterno' => substr($this->faker->lastName, 0, 12),
@@ -31,6 +33,7 @@ class EmpleadoFactory extends Factory
             'fecha_nacimiento' => $this->faker->date(),
             'departamento' => $this->faker->word,
             'departamento_tipo' => $this->faker->word,
+            'estado'=>'activo',
         ];
     }
 }

@@ -25,6 +25,7 @@ class LibroFactory extends Factory
             'nombre' => $this->faker->word,
             'latitud' => $this->faker->latitude,
             'longitud' => $this->faker->longitude,
+            'estado'=>'activo',
         ];
     }
 }

@@ -16,8 +16,10 @@ class GiroComercialCatalogoFactory extends Factory
      */
     public function definition(): array
     {
-        //$giros[]=["comercial","domestico","industrial","especial","publico"];
+        $giros[]=["comercial","domestico","industrial","especial","publico"];
         return [
+            'nombre_giro'=>'activo',
+            'estado'=>'activo',
         ];
       
     }

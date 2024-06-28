@@ -18,5 +18,6 @@ class Empleado extends Model
         'fecha_nacimiento',
         'departamento',
         'departamento_tipo',
+        'estado',
     ];
 }

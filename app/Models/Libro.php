@@ -13,5 +13,6 @@ class Libro extends Model
         'nombre',
         'latitud',
         'longitud',
+        'estado',
     ];
 }

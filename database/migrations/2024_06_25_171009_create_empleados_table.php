@@ -22,6 +22,7 @@ return new class extends Migration
             $table->date('fecha_nacimiento');
             $table->string('departamento'); //Enum
             $table->string('departamento_tipo'); //Es un enum
+            $table->enum('estado',['inactivo','activo']);
             $table->timestamps();
         });
     }

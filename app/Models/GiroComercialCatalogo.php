@@ -10,5 +10,6 @@ class GiroComercialCatalogo extends Model
     use HasFactory;
     protected $fillable=[
         'nombre_giro',
+        'estado',
     ];
 }

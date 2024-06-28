@@ -26,7 +26,7 @@ class RutaFactory extends Factory
         //$numrutas=DB::table('rutas')->count()+1;
         return [
         'nombre'=>'ruta'.$numrutas,
-        'estatus'=>'activo',
+        'estado'=>'activo',
         ];
     }
 }

@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('nombre');
             $table->decimal('latitud', 10, 7);
             $table->decimal('longitud', 10, 7);
+            $table->enum('estado',['inactivo','activo']);
             $table->timestamps();
         });
     }

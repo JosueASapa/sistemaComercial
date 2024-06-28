@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('giro_comercial_catalogos', function (Blueprint $table) {
             $table->id();
             $table->string('nombre_giro');
+            $table->enum('estado',['inactivo','activo']);
             $table->timestamps();
         });
     }

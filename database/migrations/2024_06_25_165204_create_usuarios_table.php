@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('curp', 18)->unique();
             $table->string('rfc', 16)->unique();
             $table->string('correo')->unique();
+            $table->enum('estado',['inactivo','activo']);
             $table->timestamps();
         });
     }

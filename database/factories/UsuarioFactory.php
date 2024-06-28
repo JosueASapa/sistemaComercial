@@ -28,6 +28,7 @@ class UsuarioFactory extends Factory
             'curp' => Str::upper(Str::random(18)),
             'rfc' => Str::upper(Str::random(13)),
             'correo' => $this->faker->unique()->safeEmail,
+            'estado'=>'activo',
         ];
     }
 }
